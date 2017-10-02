@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hey Wagon</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="layoutmode" content="standard">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="renderer" content="webkit">
+    <meta name="wap-font-scale" content="no">
+    <meta content="telephone=no" name="format-detection">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- awesome font css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <!-- custom fonts -->
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- comm css -->
+    <link rel="stylesheet" type="text/css" href="css/comm.css">
+    <!-- nav css -->
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <!-- nav css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" type="text/css" href="css/swiper.css">
+    <!-- jquery js -->
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- nav.js  control nav -->
+    <script type="text/javascript" src="js/page/nav.js"></script>
+    <!-- swiper 插件 -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <!-- index .js -->
+    <script type="text/javascript" src="js/page/index.js"></script>
+</head>
+
+<body>
+    <nav id="mobile-menu" class="mobile-menu">
+        <div class="mobile-login-area">
+            <div class="text-center">
+                <img src="img/por.png" class="img-circle" width="60">
+                <p class="text-center name">
+                    <a href="#">透明泡泡o0</a>
+                </p>
+                <div>
+                    <!-- <a href="" class="btn-exit">退&nbsp;出</a> -->
+                </div>
+                <ul class="operation-box list-unstyled">
+                    <li class="operation-item">
+                        <a href="#">
+                                个人中心
+                                <span><img src="img/icon_person_center.png" width="30"></span>
+                            </a>
+                    </li>
+                    <li class="operation-item">
+                        <a href="#">
+                                退出
+                                <span><img src="img/icon_exit.png" width="30"></span>
+                            </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="list-unstyled menu-view menu-ul">
+            <li>
+                <a href="#" class="selected">首页</a>
+            </li>
+            <li>
+                <a href="#">新闻</a>
+            </li>
+            <li>
+                <a href="#">社区</a>
+            </li>
+            <li>
+                <a href="#">Q&A</a>
+            </li>
+            <li>
+                <a href="#">活动广场</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- content body start -->
+    <div id="wrap">
+        <div class="content-wrap">
+            <!-- 导航(pc)  start -->
+            <header class="header clearfix" id="header">
+                <!-- nav bar start -->
+                <div class="btn-menu nav-btn visible-xs" id="btn-menu">
+                    <div class="nav-btn-box">
+                        <div class="nav-btn-parent">
+                            <div class="menu-box">
+                                <span class="icon"></span>
+                                <span class="icon"></span>
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav bar end -->
+                <!-- header content start-->
+                <div class="header-container container">
+                    <div class="header-content clearfix">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="#">
+                                    <img src="images/icon/logo.png">
+                                </a>
+                        </div>
+                        <!-- nav-item -->
+                        <ul class="nav-item list-unstyled hidden-xs">
+                            <li class="on">
+                                <a href="#">首页</a>
+                            </li>
+                            <li>
+                                <a href="#">新闻</a>
+                            </li>
+                            <li>
+                                <a href="#">社区</a>
+                            </li>
+                            <li>
+                                <a href="#">Q&A</a>
+                            </li>
+                            <li>
+                                <a href="#">活动广场</a>
+                            </li>
+                            <li>
+                                <a href="# ">投稿</a>
+                            </li>
+                        </ul>
+                        <!-- login-area -->
+                        <div class="login-wrap">
+                            <div class="login-area">
+                                <!--  -->
+                                <div class="login-box">
+                                    <a href="#">登录</a>
+                                    <a href="#">注册</a>
+                                    <!--  <a href="#"><img src="img/icon_enter.png" width="30" title='登录'></a>
+                                    <a href="#"><img src="img/icon_register.png" width="30" title='注册'></a> -->
+                                </div>
+                                <!-- 登录状态时用户的头像 -->
+                                <div class="login-portrait">
+                                    <a class="portrait-box text-center">
+                                            <img src="img/por.png" width="35px" class="img-circle">
+                                            <span class="text-center">透明泡泡o0</span>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- search area -->
+                        <div class="search-wrap">
+                            <div class="search-area">
+                                <input class="search-input" " type="text " autocomplete="off " placeholder="搜你想要 ">
+                                <button  type="button " class="fa fa-search fa-lg " aria-hidden="true "></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header content end-->
+            </header>
+            <!-- 导航(pc) end -->
+
+            <!-- 主体内容 start -->
+            <section class="main-content " id="content ">
+                <div class="container ">
+                    <!-- banner st -->
+                    <div class="banner ">
+                       <!-- Swiper  st-->
+                        <div class="swiper-container ">
+                            <div class="swiper-wrapper ">
+                                <a class="swiper-slide " href="# "><img src="images/page/index/index_banner.png " width="100% "></a>
+                                <a class="swiper-slide " href="# "><img src="images/page/index/index_banner.png " width="100% "></a>
+                                <a class="swiper-slide " href="# "><img src="images/page/index/index_banner.png " width="100% "></a>
+                            </div>
+                            <!-- Add Pagination -->
+                            <div class="swiper-pagination "></div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next "><i class="fa fa-angle-right " aria-hidden="true "></i></div>
+                            <div class="swiper-button-prev "><i class="fa fa-angle-left " aria-hidden="true "></i></div>
+                        </div>
+                        <!-- Swiper  end-->
+                    </div>
+                    <!-- banner end -->
+                    
+                    <!-- floor news  st -->
+                    <div class=" ">
+                        <div class="row ">
+                            <div class="col-md-8 col-sm-12 ">
+                                <h3 class="title clearfix ">
+                                   <span class="txt-ch "><i class="icon iconfont icon-news icon-title "></i>新闻资讯</span>
+                                   <span class="txt-en ">news</span>
+                                    <a href="# " class="btn_more ">more <i class="fa fa-angle-right "></i></a>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="row ">
+                            <div class="col-md-8 col-sm-12 news-and-circle ">
+                                <!-- news -->
+                                <ul class="news-viw list-unstyled ">
+                                    <li class="viw-item table-view ">
+                                        <p class="media table-view-cell ">
+                                            <a href=" "><img src="images/page/index/index_news_01.png " class="aside-media-img "></a>
+                                        </p>
+                                        <div class="media-body table-view-cell ">
+                                            <p class="xr-ellipsis-2 info-title ">
+                                                <a href=" ">
+                                                    【图文】旅行车能否在国内获得更多认可，甚至像 SUV 一样在   国内流行起来？
+                                                </a>
+                                            </p>
+                                            <p class="xr-ellipsis info-sub-title ">
+                                                BBA的旅行车渐渐都在引进和迭代了。国内大家的需求都想尽量多面手一些...[阅读全文]
+                                                <button class="read-detail btn-no-border-bg ">[阅读全文]</button>
+                                            </p>
+                                            <p class="footer-info footer-info-left ">
+                                                <span>9分钟前 | @今夜无眠</span>
+                                                
+                                            </p>
+                                            <p class="footer-info footer-info-right ">
+                                                <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                <span><i class="icon iconfont icon-msg2 "></i>10</span>
+                                                <span><i class="icon iconfont icon-nice "></i>30</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="viw-item table-view ">
+                                        <p class="media table-view-cell ">
+                                            <a href=" "><img src="images/page/index/index_news_02.png " class="aside-media-img "></a>
+                                        </p>
+                                        <div class="media-body table-view-cell ">
+                                            <p class="xr-ellipsis-2 info-title ">
+                                                <a href=" ">
+                                                    【图文】旅行车能否在国内获得更多认可，甚至像 SUV 一样在   国内流行起来？
+                                                </a>
+                                            </p>
+                                            <p class="xr-ellipsis info-sub-title ">
+                                                BBA的旅行车渐渐都在引进和迭代了。国内大家的需求都想尽量多面手一些...[阅读全文]
+                                                <button class="read-detail btn-no-border-bg ">[阅读全文]</button>
+                                            </p>
+                                            <p class="footer-info footer-info-left ">
+                                                <span>9分钟前 | @今夜无眠</span>
+                                                
+                                            </p>
+                                            <p class="footer-info footer-info-right ">
+                                                <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                <span><i class="icon iconfont icon-msg2 "></i>10</span>
+                                                <span><i class="icon iconfont icon-nice "></i>30</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="viw-item table-view ">
+                                        <p class="media table-view-cell ">
+                                            <a href=" "><img src="images/page/index/index_news_01.png " class="aside-media-img "></a>
+                                        </p>
+                                        <div class="media-body table-view-cell ">
+                                            <p class="xr-ellipsis-2 info-title ">
+                                                <a href=" ">
+                                                    【图文】旅行车能否在国内获得更多认可，甚至像 SUV 一样在   国内流行起来？
+                                                </a>
+                                            </p>
+                                            <p class="xr-ellipsis info-sub-title ">
+                                                BBA的旅行车渐渐都在引进和迭代了。国内大家的需求都想尽量多面手一些...[阅读全文]
+                                                <button class="read-detail btn-no-border-bg ">[阅读全文]</button>
+                                            </p>
+                                            <p class="footer-info footer-info-left ">
+                                                <span>9分钟前 | @今夜无眠</span>
+                                                
+                                            </p>
+                                            <p class="footer-info footer-info-right ">
+                                                <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                <span><i class="icon iconfont icon-msg2 "></i>10</span>
+                                                <span><i class="icon iconfont icon-nice "></i>30</span>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 新闻&圈子 end -->
+                            <!-- 热门资讯 st -->
+                            <div class="col-md-4 col-sm-12 ">
+                                <div class="row-24h ">
+                                    <div class="row-24hhot-topic ">
+                                        <h3 class="title clearfix ">
+                                           <span class="txt-ch "> <i class="icon iconfont icon-24h icon-title "></i>热门资讯</span>
+                                            <a href="# " class="btn_more ">more <i class="fa fa-angle-right "></i></a>
+                                        </h3>
+                                    </div>
+                                    <div id="parent_24h " class="topic-24hhot-view ">
+                                        <div class="information-box " id="information-box ">
+                                           <!-- Swiper -->
+                                              <div class="swiper-container ">
+                                                  <div class="swiper-wrapper ">
+                                                        <div class="swiper-slide ">
+                                                            <a href="# ">Slide 1</a>
+                                                        </div>
+                                                        <div class="swiper-slide ">
+                                                            <a href="# ">Slide 2</a>
+                                                        </div>
+                                                        <div class="swiper-slide ">
+                                                            <a href="# ">Slide 3</a>
+                                                        </div>
+                                                        <div class="swiper-slide ">
+                                                            <a href="# ">Slide 4</a>
+                                                        </div>
+                                                        <div class="swiper-slide ">
+                                                            <a href="# ">Slide 3</a>
+                                                        </div>
+                                                  </div>
+                                                  <!-- Add Pagination -->
+                                                  <div class="swiper-pagination "></div>
+                                              </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 热门话题 end -->
+                        </div>
+                    </div>
+                     <!-- floor news circle end -->
+                   
+
+                    <!-- 活动广场 st -->
+                    <div class="row-activity-square ">
+                        <div class="title clearfix ">
+                            <h3 class="left pull-left ">
+                                <span class="txt-ch "><i class="icon iconfont icon-event icon-title "></i>活动广场</span>
+                                <span class="txt-en ">activity square</span>
+                            </h3>
+                            <ul class="right pull-right list-unstyled activity-nav-view ">
+                                <li><a href="# ">线下</a></li>
+                                <li><a href="# ">直播</a></li>
+                                <li><a href="# ">话题</a></li>
+                                <li><a href="# ">美图</a></li>
+                                <li><a href="# " class="active ">视频</a></li>
+                            </ul>
+                        </div>
+                        <!-- activity content st -->
+                        <div class="activity-square-view " style="padding: 20px;background: #fff; ">
+                            <div class="row ">
+                                 <aside class="col-md-5 col-sm-5 col-xs-12 activity-square-item activity-square-item-left ">
+                                     <a href="# ">
+                                         <figure>
+                                             <img src="images/page/index/index_event_01.png " width="100% ">
+                                             <figcaption>
+                                                 <p>旅行车是个什么鬼！</p>
+                                                 <span>是不是无聊的单身狗，才会感兴趣这么冷门的话题？</span>
+                                             </figcaption>
+                                         </figure>
+                                     </a>
+                                 </aside>
+                                 <div class="col-md-7 col-sm-7 col-xs-12 activity-square-item ">
+                                    <ul class="row list-unstyled activity-square-item-right ">
+                                       <li class="col-md-4 col-sm-4 col-xs-4 ">
+                                           <a href="# ">
+                                               <figure>
+                                                   <img src="images/page/index/index_event_02.png " width="100% ">
+                                                   <figcaption>先打声招呼，然后直接干进正题。</figcaption>
+                                               </figure>
+                                           </a>
+                                       </li>
+                                       <li class="col-md-4 col-sm-4 col-xs-4 ">
+                                           <a href="# ">
+                                               <figure>
+                                                   <img src="images/page/index/index_event_03.png " width="100% ">
+                                                   <figcaption>先打声招呼，然后直接干进正题。</figcaption>
+                                               </figure>
+                                           </a>
+                                       </li>
+                                       <li class="col-md-4 col-sm-4 col-xs-4 ">
+                                           <a href="# ">
+                                               <figure>
+                                                   <img src="images/page/index/index_event_04.png " width="100% ">
+                                                   <figcaption>先打声招呼，然后直接干进正题。</figcaption>
+                                               </figure>
+                                           </a>
+                                       </li>
+                                       <li class="col-md-4 col-sm-4 col-xs-4 ">
+                                           <a href="# ">
+                                               <figure>
+                                                   <img src="images/page/index/index_event_05.png " width="100% ">
+                                                   <figcaption>先打声招呼，然后直接干进正题。</figcaption>
+                                               </figure>
+                                           </a>
+                                       </li>
+                                       <li class="col-md-4 col-sm-4 col-xs-4 ">
+                                           <a href="# ">
+                                               <figure>
+                                                   <img src="images/page/index/index_event_06.png " width="100% ">
+                                                   <figcaption>先打声招呼，然后直接干进正题。</figcaption>
+                                               </figure>
+                                           </a>
+                                       </li>
+                                       <li class="col-md-4 col-sm-4 col-xs-4 ">
+                                           <a href="# ">
+                                               <figure>
+                                                   <img src="images/page/index/index_event_07.png " width="100% ">
+                                                   <figcaption>先打声招呼，然后直接干进正题。</figcaption>
+                                               </figure>
+                                           </a>
+                                       </li>
+                                    </ul>
+                                 </div>
+                            </div>
+                        </div>
+                         <!-- activity content end -->
+                    </div>
+                    <!-- 活动广场 end -->
+                    <!-- ad floor  st-->
+                    <div class="row-ad ">
+                         <img src="images/page/index/index_ad_01.png " width="100% ">
+                    </div>
+                    <!-- ad floor  end-->
+
+                    <!-- QA st-->
+                    <div class="row-qa ">
+                        <div class="row ">
+                            <div class="col-md-8 col-sm-12 row-qa-box ">
+                                <h3 class="title clearfix ">
+                                    <span class="txt-ch "><i class="icon iconfont icon-qa icon-title "></i>Q&A</span>
+                                    <!-- <a href="# " class="btn_more ">more <i class="fa fa-angle-right "></i></a> -->
+                                    <P class="right-search "><input type="text " name=" "><button type="button " class="fa fa-search fa-lg btn-add " aria-hidden="true "></button></P>
+                                </h3>
+                                <div class="qa-content ">
+                                    <div class="qa-tab ">
+                                        <ul class="list-unstyled qa-tab-view clearfix ">
+                                           <!--  <li><a href=" ">内容</a></li>
+                                            <li><a href=" ">用户</a></li>
+                                            <li><a href=" ">话题</a></li> -->
+                                            <li><a href=" ">已解决</a></li>
+                                            <li><a href=" ">未解决</a></li>
+                                        </ul>
+                                         <button class="btn-add ">提问?</button>
+                                    </div>
+                                    <ul class="qa-viw list-unstyled ">
+                                        <li class="viw-item ">
+                                           <div class="media-title ">
+                                                <a href=" " class="media-img " ><img src="images/page/index/index_qa_01.png "></a>
+                                                <p>质量攻城狮</p> 
+                                                <p class="clearfix "><span>15058 人聚集在此</span><span>6758帖子</span> <button class="btn-add pull-right "><i class="icon iconfont icon-add "></i>加入小组</button></p>
+                                           </div>
+                                           <div>
+                                               先说旅行车的设计意图。旅行车就是在不牺牲轿车操控性的基础上增加一点载物的空间。为什么旅行车在欧洲受欢迎，因为欧洲好路多，旅行车
+                                           </div>
+                                            <ul class="list-unstyled sub-viw ">
+                                                <li  class="xr-ellipsis ">
+                                                    <a href=" ">
+                                                        【每日精选】拥有旅行车是怎样的一种体验？
+                                                    </a>
+                                                    <p class="read-info ">
+                                                        <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                        <span><i class="icon iconfont icon-msg2 "></i>130</span>
+                                                    </p>
+                                                </li>
+                                                <li  class="xr-ellipsis ">
+                                                    <a href=" ">
+                                                        旅行车能否在国内获得更多认可，甚至像 SUV 一样在国内流行起来？
+                                                    </a>
+                                                    <p class="read-info ">
+                                                        <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                        <span><i class="icon iconfont icon-msg2 "></i>130</span>
+                                                    </p>
+                                                </li>
+                                                <li  class="xr-ellipsis ">
+                                                    <a href=" ">
+                                                        沃尔沃V90 CC：越野旅行车和SUV差多远？
+                                                    </a>
+                                                    <p class="read-info ">
+                                                        <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                        <span><i class="icon iconfont icon-msg2 "></i>130</span>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="viw-item ">
+                                            <div class="media-title ">
+                                                 <a href=" " class="media-img " ><img src="images/page/index/index_ad_02.png "></a>
+                                                 <p>质量攻城狮</p> 
+                                                 <p class="clearfix "><span>15058 人聚集在此</span><span>6758帖子</span> <button class="btn-add pull-right "><i class="icon iconfont icon-add "></i>加入小组</button></p>
+                                            </div>
+                                            <div>
+                                                先说旅行车的设计意图。旅行车就是在不牺牲轿车操控性的基础上增加一点载物的空间。为什么旅行车在欧洲受欢迎，因为欧洲好路多，旅行车
+                                            </div>
+                                             <ul class="list-unstyled sub-viw ">
+                                                 <li  class="xr-ellipsis ">
+                                                     <a href=" ">
+                                                         【每日精选】拥有旅行车是怎样的一种体验？
+                                                     </a>
+                                                     <p class="read-info ">
+                                                         <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                         <span><i class="icon iconfont icon-msg2 "></i>130</span>
+                                                     </p>
+                                                 </li>
+                                                 <li  class="xr-ellipsis ">
+                                                     <a href=" ">
+                                                         旅行车能否在国内获得更多认可，甚至像 SUV 一样在国内流行起来？
+                                                     </a>
+                                                     <p class="read-info ">
+                                                         <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                         <span><i class="icon iconfont icon-msg2 "></i>130</span>
+                                                     </p>
+                                                 </li>
+                                                 <li  class="xr-ellipsis ">
+                                                     <a href=" ">
+                                                         沃尔沃V90 CC：越野旅行车和SUV差多远？
+                                                     </a>
+                                                     <p class="read-info ">
+                                                         <span><i class="icon iconfont icon-has-read "></i>60</span>
+                                                         <span><i class="icon iconfont icon-msg2 "></i>130</span>
+                                                     </p>
+                                                 </li>
+                                             </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            <!-- QA end -->
+
+
+                            <!--右侧  热门话题2 st -->
+                            <div class="col-md-4 col-sm-12 ">
+                                <div class="row-hot-topic ">
+                                    <h3 class="title clearfix ">
+                                       <span class="txt-ch "><i class="icon iconfont icon-hot-topic icon-title "></i>热门小组</span>
+                                    </h3>
+                                    <!-- hot-topic content st -->
+                                    <div  id="parent" class="hot-topic-view ">
+                                        <ul  id="cld1"  class="list-view list-unstyled ">
+                                            <li class="hot-topic-view-item list-view-item ">
+                                                <a href="# ">
+                                                    <div class="table-view ">
+                                                       <div class="table-view-cell ">
+                                                           <img src="images/page/index/index_hot_topic_01.png " class='table-view-cell-media'>
+                                                           <dl class="table-view-cell-title ">
+                                                               <dt>瓦罐迷</dt>
+                                                               <dd>10581 人聚集在此</dd>
+                                                           </dl>
+                                                       </div>
+                                                        <p class="table-view-cell right ">
+                                                            <button class="btn-add "><i class="icon iconfont icon-add "></i>加入小组</button><br>
+                                                            <span class="count ">2948帖子</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        以往很不受国人待见的旅行版车型也逐渐成为了一个很有市场潜力的细分市场。 那么什么是旅行车？为什么我们要去远方看世界，它会成为不错的选择？
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="hot-topic-view-item list-view-item ">
+                                                <a href="# ">
+                                                    <div class="table-view ">
+                                                       <div class="table-view-cell ">
+                                                           <img src="images/page/index/index_hot_topic_02.png " class='table-view-cell-media'>
+                                                           <dl class="table-view-cell-title ">
+                                                               <dt>瓦罐迷</dt>
+                                                               <dd>10581 人聚集在此</dd>
+                                                           </dl>
+                                                       </div>
+                                                        <p class="table-view-cell right ">
+                                                            <button class="btn-add "><i class="icon iconfont icon-add "></i>加入小组</button><br>
+                                                            <span class="count ">2948帖子</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        以往很不受国人待见的旅行版车型也逐渐成为了一个很有市场潜力的细分市场。 那么什么是旅行车？为什么我们要去远方看世界，它会成为不错的选择？
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="hot-topic-view-item list-view-item ">
+                                                <a href="# ">
+                                                    <div class="table-view ">
+                                                       <div class="table-view-cell ">
+                                                           <img src="images/page/index/index_hot_topic_03.png " class='table-view-cell-media'>
+                                                           <dl class="table-view-cell-title ">
+                                                               <dt>瓦罐迷</dt>
+                                                               <dd>10581 人聚集在此</dd>
+                                                           </dl>
+                                                       </div>
+                                                        <p class="table-view-cell right ">
+                                                            <button class="btn-add "><i class="icon iconfont icon-add "></i>加入小组</button><br>
+                                                            <span class="count ">2948帖子</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        以往很不受国人待见的旅行版车型也逐渐成为了一个很有市场潜力的细分市场。 那么什么是旅行车？为什么我们要去远方看世界，它会成为不错的选择？
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="hot-topic-view-item list-view-item ">
+                                                <a href="# ">
+                                                    <div class="table-view ">
+                                                       <div class="table-view-cell ">
+                                                           <img src="images/page/index/index_hot_topic_03.png " class='table-view-cell-media'>
+                                                           <dl class="table-view-cell-title ">
+                                                               <dt>瓦罐迷</dt>
+                                                               <dd>10581 人聚集在此</dd>
+                                                           </dl>
+                                                       </div>
+                                                        <p class="table-view-cell right ">
+                                                            <button class="btn-add "><i class="icon iconfont icon-add "></i>加入小组</button><br>
+                                                            <span class="count ">2948帖子</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        以往很不受国人待见的旅行版车型也逐渐成为了一个很有市场潜力的细分市场。 那么什么是旅行车？为什么我们要去远方看世界，它会成为不错的选择？
+                                                    </p>
+                                                </a>
+                                            </li>
+                                            <li class="hot-topic-view-item list-view-item ">
+                                                <a href="# ">
+                                                    <div class="table-view ">
+                                                       <div class="table-view-cell ">
+                                                           <img src="images/page/index/index_hot_topic_03.png " class='table-view-cell-media'>
+                                                           <dl class="table-view-cell-title ">
+                                                               <dt>瓦罐迷</dt>
+                                                               <dd>10581 人聚集在此</dd>
+                                                           </dl>
+                                                       </div>
+                                                        <p class="table-view-cell right ">
+                                                            <button class="btn-add "><i class="icon iconfont icon-add "></i>加入小组</button><br>
+                                                            <span class="count ">2948帖子</span>
+                                                        </p>
+                                                    </div>
+                                                    <p>
+                                                        以往很不受国人待见的旅行版车型也逐渐成为了一个很有市场潜力的细分市场。 那么什么是旅行车？为什么我们要去远方看世界，它会成为不错的选择？
+                                                    </p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul id='cld2'  class=" list-view list-unstyled "></ul>
+                                        <style type="text/css">
+                                          
+                                        </style>
+                                        <script type="text/javascript">
+                                            var speed = 40;
+                                            var step=186;
+                                            window.onload=function(){
+                                                var scrollTOP=0;
+                                                var cldContent=$('#cld1').html();
+                                                $('#cld2').html(cldContent);
+                                                function Marquee() {
+                                                    if ($('#parent').get(0).scrollTop >= $('#cld1').get(0).offsetHeight) {
+                                                        $('#parent').get(0).scrollTop = 0;
+                                                    } else {
+                                                        $('#parent').get(0).scrollTop = $('#parent').get(0).scrollTop + 1;
+                                                    }
+                                                }
+                                                var MyMar = setInterval(Marquee, speed)
+                                                $('#parent').get(0).onmouseover = function() { clearInterval(MyMar) }
+                                                $('#parent').get(0).onmouseout = function() { MyMar = setInterval(Marquee, speed) }
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 热门话题 end -->
+                        </div>
+                    </div>
+                     <!-- QA end-->
+
+                     <!-- ad floor  st-->
+                    <div class="row-ad ">
+                         <img src="images/page/index/index_ad_11.png " width="100% ">
+                    </div>
+                    <!-- ad floor  end-->
+
+                    <!-- 活跃达人 st -->
+                    <div class="row-active-people ">
+                        <h3 class="title clearfix ">
+                            <span class="txt-ch "><i class="icon iconfont icon-active-people icon-title "></i>活跃达人</span>
+                            <span class="txt-en ">active people</span>
+                        </h3>
+                        <div class="active-people-view ">
+                            <ul class="list-unstyled hipster-view ">
+                                <li class="hipster-item ">
+                                    <dl>
+                                        <dt> <img src="images/page/index/index_dr_01.png "></dt>
+                                        <dd>瓦罐迷</dd>
+                                        <dd><a href="# "><i class="icon iconfont icon-add "></i>加关注</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="hipster-item ">
+                                    <dl>
+                                        <dt><img src="images/page/index/index_dr_02.png "></dt>
+                                        <dd>瓦罐迷</dd>
+                                        <dd><a href="# "><i class="icon iconfont icon-add "></i>加关注</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="hipster-item ">
+                                    <dl>
+                                        <dt><img src="images/page/index/index_dr_03.png "></dt>
+                                        <dd>瓦罐迷</dd>
+                                        <dd><a href="# "><i class="icon iconfont icon-add "></i>加关注</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="hipster-item ">
+                                    <dl>
+                                        <dt><img src="images/page/index/index_dr_04.png "></dt>
+                                        <dd>瓦罐迷</dd>
+                                        <dd><a href="# "><i class="icon iconfont icon-add "></i>加关注</a></dd>
+                                    </dl>
+                                </li>
+                                <li class="hipster-item ">
+                                    <dl>
+                                        <dt><img src="images/page/index/index_dr_05.png "></dt>
+                                        <dd>瓦罐迷</dd>
+                                        <dd><a href="# "><i class="icon iconfont icon-add "></i>加关注</a></dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 活跃达人 end -->
+                </div>
+            </section>
+            <!-- 主体内容 end -->
+        </div>
+    </div>
+    <!-- content body end -->
+    <!-- footer start -->
+    <footer>
+        <div class="footer-floor1 ">
+            <div class="container ">
+                <ul class="list-unstyled link-view ">
+                    <li><a href="# ">关于我们</a></li>
+                    <li><a href="# ">骑车广场</a></li>
+                    <li><a href="# ">Q&A</a></li>
+                    <li><a href="# ">圈子</a></li>
+                    <li><a href="# ">新闻</a></li>
+                    <li><a href="# ">首页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-floor2 ">
+            <p class="text-center ">上海嘿·瓦罐有限公司  沪ICP备00000000号</p>
+            <p class="text-center ">Copyright@2016-2017 www.cn56park.com All Rights Reserved</p>
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- top top st-->
+    <a href="# " class="to-top "><i class="icon iconfont icon-to-top "></i></a>
+    <!-- top top end-->
+    <!-- sider-bar st -->
+    <div class="sider-bar ">
+        <ul class="list-unstyled ">
+            <li>
+                <div class="icon-div "><i class="icon iconfont icon-wchat2 "></i></div>
+                <div></div>
+            </li>
+            <li>
+                <div class="icon-div "><i class="icon iconfont icon-weibo1 "></i></div>
+                <div></div>
+            </li>
+            <li>
+                <div class="icon-div "><i class="icon iconfont icon-phone1 "></i></div>
+                <div></div>
+            </li>
+            <li>
+                <div class="icon-div "><i class="icon iconfont icon-msg1 "></i></div>
+                <div></div>
+            </li>
+            <li>
+                <div class="icon-div "><i class="icon iconfont icon-ewm1 "></i></div>
+                <div></div>
+            </li>
+        </ul>
+    </div>
+    <!-- sider-bar end -->
+    <script type="text/javascript ">
+
+    </script>
+</body>
+
+</html>

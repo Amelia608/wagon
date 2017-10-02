@@ -1,0 +1,77 @@
+//color
+@main-color:#3cb6ee;
+@main-color-1:red;
+//font font-nav  font-title
+@font-color:#000;
+@font-sm-color:#858585;//  时间戳  标签等颜色
+@font-ctx-gray:#5d5d5d;//灰色字体颜色
+@title-color:#000;
+@title-en-color:#5d5d5d;
+@font-size-base: 14px;
+@font-size-large: ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small: ceil((@font-size-base * 0.85)); // ~12px
+//导航字体大小 导航使用最多的字体大小为14px，15px，16px最多
+@font-nav-size:@font-size-base; 
+//title font  标题字体大小
+@font-mainpage-row-title-size:ceil((@font-size-base*1.55));//~22px;   每个版块的标题大小
+@font-row-title-size:ceil((@font-size-base*1.085));//~16px;   每个版块的标题大小
+@font-title-large: ceil((@font-size-base*1.75));//~25px;  特大标题
+//button
+@btn-radius-sm:2px;
+@btn-radius-md:5px;
+@btn-default-color:#333;
+@btn-dafault-bg:#fff;
+@btn-dafault-border:#e6e6e6;
+
+@btn-main-color:#fff;
+@btn-dafault-bg:@main-color;
+@btn-dafault-border:darken(@main-color,5%);
+
+@btn-com-width:100px;
+@btn-com-height:40px;
+@images:'../img/';
+
+
+
+//input 
+@input-border-color:#e6e6e6;
+@input-border-focus-color:darken(@input-border-color,7%);
+
+//border-color
+@border-color:#dcdcdc;
+//z-index
+@z-index-lg:5000;
+@z-index-md:4000;
+@z-index-sm:3000;
+@z-index-xs:1000;
+
+//导航菜单mobile background
+@nav-mobile-menu-bg:#1d1d1d;
+@header-height:72px;
+
+
+// Extra small screen / phone
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);

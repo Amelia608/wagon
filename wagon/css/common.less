@@ -1,0 +1,147 @@
+@import url(variate.less);
+//transition  && transfrom
+.transition(@pro: background-color, @dur: .3s, @fn: ease-in, @delay: 0s) {
+    -webkit-transition: @pro @dur @fn @delay;
+    -moz-transition: @pro @dur @fn @delay;
+    -ms-transition: @pro @dur @fn @delay;
+    -o-transition: @pro @dur @fn @delay;
+    transition: @pro @dur @fn @delay;
+}
+
+.translate(@x, @y) {
+    transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -webkit-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+    -moz-transform: translate(@x, @y);
+}
+
+.translate3d(@x, @y, @z) {
+    transform: translate3d(@x, @y, @z);
+    -ms-transform: translate3d(@x, @y, @z);
+    -webkit-transform: translate3d(@x, @y, @z);
+    -o-transform: translate3d(@x, @y, @z);
+    -moz-transform: translate3d(@x, @y, @z);
+}
+
+.translateX(@x) {
+    transform: translateX(@x);
+    -ms-transform: translateX(@x);
+    -webkit-transform: translateX(@x);
+    -o-transform: translateX(@x);
+    -moz-transform: translateX(@x);
+}
+
+.translateY(@y) {
+    transform: translateY(@y);
+    -ms-transform: translateY(@y);
+    -webkit-transform: translateY(@y);
+    -o-transform: translateY(@y);
+    -moz-transform: translateY(@y);
+}
+
+.rotate(@deg) {
+    transform: rotate(@deg);
+    -ms-transform: rotate(@deg);
+    -webkit-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
+    -moz-transform: rotate(@deg);
+}
+
+.scale(@x, @y) {
+    transform: scale(@x, @y);
+    -ms-transform: scale(@x, @y);
+    -webkit-transform: scale(@x, @y);
+    -o-transform: scale(@x, @y);
+    -moz-transform: scale(@x, @y);
+}
+
+.scaleX(@n) {
+    transform: scaleX(@n);
+    -ms-transform: scaleX(@n);
+    -webkit-transform: scaleX(@n);
+    -o-transform: scaleX(@n);
+    -moz-transform: scaleX(@n);
+}
+
+.scaleY(@n) {
+    transform: scaleY(@n);
+    -ms-transform: scaleY(@n);
+    -webkit-transform: scaleY(@n);
+    -o-transform: scaleY(@n);
+    -moz-transform: scaleY(@n);
+}
+
+.skew(@x-angle, @y-angle) {
+    transform: skew(@x-angle, @y-angle);
+    -ms-transform: skew(@x-angle, @y-angle);
+    -webkit-transform: skew(@x-angle, @y-angle);
+    -o-transform: skew(@x-angle, @y-angle);
+    -moz-transform: skew(@x-angle, @y-angle);
+}
+
+.skewX(angle) {
+    transform: skewX(angle);
+    -ms-transform: skewX(angle);
+    -webkit-transform: skewX(angle);
+    -o-transform: skewX(angle);
+    -moz-transform: skewX(angle);
+}
+
+.skewY(angle) {
+    transform: skewY(angle);
+    -ms-transform: skewY(angle);
+    -webkit-transform: skewY(angle);
+    -o-transform: skewY(angle);
+    -moz-transform: skewY(angle);
+}
+
+.absolute-center() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .translate(-50%, -50%);
+}
+
+.absolute-centerX() {
+    position: absolute;
+    left: 50%;
+    .translateX(-50%);
+}
+
+.absolute-centerY() {
+    position: absolute;
+    top: 50%;
+    .translateY(-50%);
+}
+
+//阴影
+//@h-shadow:水平阴影的位置（必填），允许负值
+//@v-shadow:垂直阴影的位置（必填），允许负值
+//@blur:模糊距离（可选）
+//@spread:阴影的尺寸（可选）
+//@color:阴影的颜色（可选）
+//@set:阴影方式：可选   值：inset/outset
+.box-shadow(@h-shadow: 0, @v-shadow: 3px, @blur: 6px, @spread: 0, @color: rgba(51, 51, 51, .3), @set: inset) {
+    box-shadow: @h-shadow @v-shadow @blur @spread @color @set;
+    -webkit-box-shadow: @h-shadow @v-shadow @blur @spread @color @set;
+}
+
+//动画
+//@animation-name:规定 @keyframes 动画的名称。
+//@animation-duration:规定动画完成一个周期所花费的秒或毫秒。默认是 0。
+//@animation-timing-function:规定动画的速度曲线。默认是 "ease"。
+//@animation-timing-function:规定动画的速度曲线。值：linear(动画从头到尾速度相同)/ease(低-快-慢)/ease-in(低速开始)/ease-out(低速结束)/ease-in-out(低速开始和结束)/cubic-bezier(n,n,n,n)在 cubic-bezier 函数中自己的值。可能的值是从 0 到 1 的数值。
+//@animation-delay:规定动画何时开始。默认是 0。
+//@animation-iteration-count:规定动画被播放的次数。默认是 1。 animation-iteration-count: n|infinite;
+//@animation-direction:规定动画是否在下一周期逆向地播放。默认是 "normal"。语法：animation-direction: normal|alternate; normal 默认值。动画应该正常播放。  alternate 动画应该轮流反向播放 
+//@animation-play-state:规定动画是否正在运行或暂停。默认是 "running"。 animation-play-state: paused|running;
+//@animation-fill-mode:规定对象动画时间之外的状态。  animation-fill-mode : none(不改变默认行为。) | forwards(当动画完成后，保持最后一个属性值（在最后一个关键帧中定义）。) | backwards(在 animation-delay 所指定的一段时间内，在动画显示之前，应用开始属性值（在第一个关键帧中定义）。) | both(向前和向后填充模式都被应用。);
+.animation(@name, @duration: .5s, @timing-function: linear, @delay: 0s, @count: 1, @direction: normal) {
+    animation: @name @duration @timing-function @delay @count @direction;
+    -moz-animation: @name @duration @timing-function @delay @count @direction;
+    -webkit-animation: @name @duration @timing-function @delay @count @direction;
+    -o-animation: @name @duration @timing-function @delay @count @direction;
+}
+
+

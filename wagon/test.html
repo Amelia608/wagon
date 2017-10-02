@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>测试</title>
+    <style type="text/css">
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+    </style>
+    <script type="text/javascript" src='js/jquery-1.12.3.min.js'></script>
+</head>
+<body>
+    <div id="wrap">
+        <ul>
+            <li>aaaaaaa</li>
+            <li>bbbbbbb</li>
+            <li>ccccccc</li>
+            <li>ddddddd</li>
+            <li>eeeeeee</li>
+        </ul>
+    </div>
+    <button>click</button>
+    <script type="text/javascript">
+        $('button').click(function(){
+            $('#wrap').find('ul>li').first().appendTo($('#wrap'));
+        });
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>nav测试</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- awesome font css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <!-- animate css -->
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <!-- nav css -->
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <!-- jquery js -->
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+
+<body>
+    <nav id="mobile-menu" class="mobile-menu">
+        <div class="mobile-login-area">
+            <div class="text-center">
+                <img src="img/por.png" class="img-circle" width="60">
+                <p class="text-center name"><a href="#">透明泡泡o0</a></p>
+                <div>
+                    <!-- <a href="" class="btn-exit">退&nbsp;出</a> -->
+                </div>
+                <ul class="operation-box list-unstyled">
+                    <li class="operation-item">
+                        <a href="#">
+                			个人中心
+                			<span><img src="img/icon_person_center.png" width="30"></span>
+                		</a>
+                    </li>
+                    <li class="operation-item">
+                        <a href="#">
+                        	退出
+                        	<span><img src="img/icon_exit.png" width="30"></span>
+                    	</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="list-unstyled menu-view menu-ul">
+            <li><a href="#" class="selected">首页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">圈子</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">活动广场</a></li>
+        </ul>
+    </nav>
+    <!-- content body start -->
+    <div id="wrap">
+        <div class="content-wrap">
+            <!-- 导航(pc)  start -->
+            <header class="header" id="header">
+                <!-- nav bar start -->
+                <div class="btn-menu nav-btn visible-xs" id="btn-menu">
+                    <div class="nav-btn-box">
+                        <div class="nav-btn-parent">
+                            <div class="menu-box">
+                                <span class="icon"></span>
+                                <span class="icon"></span>
+                                <span class="icon"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- nav bar end -->
+                <!-- header content start-->
+                <div class="header-container container">
+                    <div class="header-content clearfix">
+                        <!-- logo -->
+                        <div class="logo">
+                            <a href="#">
+                            	<img src="img/logo.png" width="60">
+                            </a>
+                        </div>
+                        <!-- nav-item -->
+                        <ul class="nav-item list-unstyled hidden-xs">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">新闻</a></li>
+                            <li><a href="#">圈子</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">活动广场</a></li>
+                        </ul>
+                        <!-- login-area -->
+                        <div class="login-wrap">
+                            <div class="login-area">
+                                <!--  -->
+                                <div class="login-box">
+                                    <a href="#">登录</a>
+                                    <a href="#">注册</a>
+                                    <!--  <a href="#"><img src="img/icon_enter.png" width="30" title='登录'></a>
+                                    <a href="#"><img src="img/icon_register.png" width="30" title='注册'></a> -->
+                                </div>
+                                <!-- 登录状态时用户的头像 -->
+                                <div class="login-portrait">
+                                    <a class="portrait-box text-center">
+                                		<img src="img/por.png" width="35px" class="img-circle">
+                                		<span class="text-center">透明泡泡o0</span>
+                                	</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- search area -->
+                        <div class="search-wrap">
+                            <div class="search-area">
+                                <input class="search-input" " type="text " autocomplete="off ">
+                                <button  type="button " class="fa fa-search fa-lg " aria-hidden="true "></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- header content end-->
+            </header>
+            <!-- 导航(pc) end -->
+
+            <!-- 主体内容 start -->
+            <div class="content " id="content ">
+                <div class="ld">click ld</div>
+                <div class="cy">click cy</div>
+            </div>
+            <!-- 主体内容 end -->
+        </div>
+    </div>
+    <!-- content body end -->
+    <!-- footer start -->
+    <footer>
+    </footer>
+    <!-- footer end -->
+    <script type="text/javascript ">
+    $(function() {
+        /**btn-menu toggle**/
+        $('#btn-menu').click(function() {
+            $('body').toggleClass('pushed-left');
+        })
+
+        /**菜单item点击事件  添加selected**/
+        $('.menu-ul>li>a').click(function(e) {
+            e.preventDefault();
+            $(this).addClass('selected').toggleClass('in').parent().siblings().find('a').removeClass('selected');
+        })
+
+        $(window).bind('load resize', function() {
+            var $win_width = $(this).width();
+            if ($win_width >= 768) {
+                $('body').removeClass('pushed-left');
+            }
+        })
+        $('.ld,.cy').click(function(){
+            alert(222);
+        })
+
+    })
+    </script>
+</body>
+
+</html>
